@@ -2,8 +2,12 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Usuarios;
+use App\Models\Rol;
+use App\Models\Solicitudes;
+use App\Models\Servicios;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +22,10 @@ class DatabaseSeeder extends Seeder
              'name' => 'Test User',
              'email' => 'test@example.com',
         ]);
+
+        $this->call([RolSeeder::class]);
+        $this->call([ServiciosSeeder::class]);
+        $this->call([SolicitudesSeeder::class]);
+
     }
 }
