@@ -8,9 +8,6 @@ use App\Models\Servicios;
 
 class ServiciosSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
         {
             Servicios::create([
