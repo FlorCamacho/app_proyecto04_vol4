@@ -8,9 +8,6 @@ use App\Models\Solicitudes;
 
 class SolicitudesSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         Solicitudes::create([
