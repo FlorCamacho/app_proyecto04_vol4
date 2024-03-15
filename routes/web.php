@@ -20,7 +20,4 @@ Route::get('/', function () {
 Route::get('/', function () {
     phpinfo();
 })->name('phpmyinfo');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    
