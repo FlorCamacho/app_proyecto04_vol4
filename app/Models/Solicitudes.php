@@ -39,20 +39,3 @@ class Solicitudes extends Eloquent
     protected $collection = "Solicitudes";
     protected $primarykey = "_id";
 }
-
-/*
-use MongoDB\Laravel\Eloquent\Model as Eloquent;
-
-class Solicitudes extends Eloquent
-{
-    use HasFactory;
-    protected $fillable = [
-        'fecha_solicitud',
-        'cliente_id',
-        'servicio_id',
-        'fecha_servicio',
-        'hora_servicio',
-        'ubicacion_servicio',
-        'duracion_servicio',
-    ];
-*/
